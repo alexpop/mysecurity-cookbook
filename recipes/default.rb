@@ -4,4 +4,3 @@
 #
 
 include_recipe 'mysecurity-cookbook::packages'
-

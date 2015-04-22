@@ -6,14 +6,20 @@
 driver:
   name: vagrant
 
+driver_config:
+  # I don't login often, but when I do, I do it as root
+  username: root
+  password: vagrant
+
 provisioner:
   name: chef_zero
 
 platforms:
-  - name: centos65
+  - name: centos6
     driver:
-      box: learningchef/centos65
-      box_url: learningchef/centos65
+      box: "opscode-centos-6.6"
+      # see available box urls here: https://opscode-vm-bento.s3.amazonaws.com/
+      box_url: https://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.6_chef-provisionerless.box
       network:
       - ["forwarded_port", {guest: 80, host: 8888}]
 

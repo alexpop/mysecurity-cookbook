@@ -4,9 +4,8 @@ maintainer_email 'alex@example.com'
 license 'All rights reserved'
 description 'Security related dev & test'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version '0.1.0'
+version '0.6.0'
 
 depends 'ohai'
 
-recipe 'mysecurity-cookbook::default', 'Default security recipe'
-recipe 'mysecurity-cookbook::packages', 'Recipe to manage packages from a security perspective'
+recipe 'mysecurity-cookbook::default', 'Deploy the ohai plugin and upgrade bash if vulnerable'

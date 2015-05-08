@@ -4,6 +4,6 @@ DEPENDENCIES
     metadata: true
 
 GRAPH
-  mysecurity-cookbook (0.1.0)
+  mysecurity-cookbook (0.6.0)
     ohai (>= 0.0.0)
   ohai (2.0.1)

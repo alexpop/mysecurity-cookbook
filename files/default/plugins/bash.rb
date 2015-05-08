@@ -32,8 +32,8 @@ ENDCMD
   end
 
   collect_data do
-    languages[:bash] = Mash.new
-    languages[:bash][:version] = bash_version
-    languages[:bash][:shellshock_vulnerable] = bash_vulnerable?
+    languages['bash'] = Mash.new
+    languages['bash']['version'] = bash_version
+    languages['bash']['shellshock_vulnerable'] = bash_vulnerable?
   end
 end

@@ -4,7 +4,7 @@ maintainer_email 'alex@example.com'
 license 'All rights reserved'
 description 'Security related dev & test'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version '0.6.0'
+version '0.9.1'
 
 depends 'ohai'
 

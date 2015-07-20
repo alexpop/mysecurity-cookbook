@@ -10,6 +10,9 @@ end
 
 Chef::Log.warn "*** Bash vulnerable: #{node['languages']['bash']['shellshock_vulnerable']}"
 
+Chef::Log.warn "*** run_lock_timeout: #{Chef::Config[:run_lock_timeout]}"
+#sleep 30000
+
 # Upgrade bash if vulnerable and trigger ohai plugin reload 
 package 'bash' do
   action :upgrade
